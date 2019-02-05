@@ -1,6 +1,6 @@
 # language-JCL
 
-Japanese Programming Language "JCL"
+IBM Job Control Language "JCL"
 Syntax Highlight for ATOM Editor
 
 ## 導入方法
