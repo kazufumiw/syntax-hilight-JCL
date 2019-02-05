@@ -1,0 +1,24 @@
+//BOZJCLE JOB <job parameters>
+//*********************************************************************
+//* Job Name: BOZJCLE                                                 *
+//*                                                                   *
+//*    Licensed Materials - Property of IBM                           *
+//*    5697-AB1                                                       *
+//*    Copyright IBM Corp. 2015                                       *
+//*                                                                   *
+//*    US government users restricted rights                          *
+//*    use, duplication or disclosure restricted                      *
+//*    by GSA ADP schedule contract with IBM Corp.                    *
+//*                                                                   *
+//*********************************************************************
+//OPT      EXEC PGM=BOZOPT,REGION=0M
+//STEPLIB  DD DSN=$HLQBOZ.BOZ110.SBOZMOD1,DISP=SHR
+//OPTLOG   DD DSN=$HLQ.BOZOUT.OPTLOG($BOZJOBID),DISP=SHR
+//OPTERR   DD DSN=$HLQ.BOZOUT.OPTERR($BOZJOBID),DISP=SHR
+//CEEDUMP  DD DSN=$HLQ.BOZOUT.CEEDUMP($BOZJOBID),DISP=SHR
+//SYSPRINT DD DSN=$HLQ.BOZOUT.LISTING,DISP=SHR
+//SYSBIN   DD DSN=$SYSBIN,DISP=SHR
+//SYSBOUT  DD DSN=$SYSBOUT,DISP=SHR
+//SYSIN    DD *
+  ARCH=$ARCH
+  BOPT IN=DD:SYSBIN($MEMBER) OUT=DD:SYSBOUT($MEMBER)
