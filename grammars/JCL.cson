@@ -29,7 +29,7 @@
   }
 
   {
-    'match': '( DD | EXEC | JOB )'
+    'match': '( COMMAND | CNTL | DD ENDCNTL | EXEC | IF | THEN | ELSE | ENDIF | INCLUDEDD | JOB | JCLLIB | OUTPUT | PEND | PROC | SET | XMIT)'
     'name': 'keyword.statement.type.JCL'
   }
 
