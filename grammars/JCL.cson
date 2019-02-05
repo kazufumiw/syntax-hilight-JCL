@@ -1,0 +1,36 @@
+'name': 'JCL'
+'scopeName': 'source'
+'fileTypes': [
+  'JCL'
+]
+'patterns': [
+  {
+    'match': '(//\\*.*)'
+    'name': 'punctuation.definition.comment.JCL'
+  }
+  {
+    'match': '(.*?/\\*.*\\*/.*?)'
+    'name': 'punctuation.definition.comment.JCL'
+  }
+  {
+    'match': '(^ .*)'
+    'name': 'constant.string.controlestatement.JCL'
+  }
+
+  {
+    'match': '(//[^ ]*)'
+    #'name': 'constant.numeric.integer.JCL'
+    'name': 'constant.statement.name.JCL'
+  }
+
+  {
+    'match': '(/\\*\s*)'
+    'name': 'keyword.endofstep.JCL'
+  }
+
+  {
+    'match': '( DD | EXEC | JOB )'
+    'name': 'keyword.statement.type.JCL'
+  }
+
+]

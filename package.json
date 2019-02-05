@@ -1,0 +1,11 @@
+{
+  "name": "language-JCL",
+  "version": "0.0.1",
+  "description": "JCL syntax highlight for ATOM",
+  "keywords": [ "language" ],
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  }
+}
