@@ -1,4 +1,4 @@
-# language-JCL
+# syntax-hilight-JCL
 
 IBM Job Control Language "JCL"
 Syntax Highlight for ATOM Editor
