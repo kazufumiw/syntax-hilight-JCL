@@ -4,17 +4,18 @@
   'JCL'
 ]
 'patterns': [
+
   {
-    'match': '(//\\*.*)'
+    'match': '(^//\\*.*)'
     'name': 'punctuation.definition.comment.JCL'
   }
   {
-    'match': '(.*?/\\*.*\\*/.*?)'
+    'match': '(/\\*.+\\*/)'
     'name': 'punctuation.definition.comment.JCL'
   }
   {
-    'match': '(^ .*)'
-    'name': 'constant.string.controlstatement.JCL'
+   'match': '(^ .*)'
+   'name': 'constant.string.controlstatement.JCL'
   }
 
   {
@@ -23,14 +24,17 @@
     'name': 'constant.statement.name.JCL'
   }
 
+
   {
     'match': '(/\\*\s*)'
-    'name': 'keyword.endofstep.JCL'
+    #'name': 'keyword.endofstep.JCL'
+    'name': 'constant.string.controlstatement.JCL'
   }
 
   {
-    'match': '( COMMAND | CNTL | DD | ENDCNTL | EXEC | IF | THEN | ELSE | ENDIF | INCLUDEDD | JOB | JCLLIB | OUTPUT | PEND | PROC | SET | XMIT)'
+    'match': '(COMMAND | CNTL | DD | ENDCNTL | EXEC | IF | THEN | ELSE | ENDIF | INCLUDEDD | JOB | JCLLIB | OUTPUT | PEND | PROC | SET | XMIT)'
     'name': 'keyword.statement.type.JCL'
   }
+
 
 ]
