@@ -7,13 +7,10 @@
 
   {
     'match': '(^//\\*.*)'
-<<<<<<< HEAD
-=======
     'name': 'punctuation.definition.comment.JCL'
   }
   {
     'match': '(/\\*.+\\*/)'
->>>>>>> 8caaa3fcdf0bb5a0a8dd6b4cc764aeed1737f2e1
     'name': 'punctuation.definition.comment.JCL'
   }
   #{
@@ -34,11 +31,7 @@
 
 
   {
-<<<<<<< HEAD
     'match': '(^/\\*\s*)'
-=======
-    'match': '(/\\*\s*)'
->>>>>>> 8caaa3fcdf0bb5a0a8dd6b4cc764aeed1737f2e1
     #'name': 'keyword.endofstep.JCL'
     'name': 'constant.string.controlstatement.JCL'
   }
